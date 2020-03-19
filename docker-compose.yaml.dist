@@ -5,6 +5,7 @@ services:
     image: "tommynovember7/docker-node:node12"
     volumes:
       - "./project:/var/project"
+      - "./docker/.volumes/npm:/root/.npm"
     working_dir: /var/project
 
   gulp:

@@ -19,7 +19,7 @@ alias hadolint="docker-compose run --rm hadolint"
 alias aws="docker-compose run --rm aws"
 
 # alias npm="docker-compose run --rm node npm"
-alias node="docker-compose run --rm node node"
+# alias node="docker-compose run --rm node node"
 alias yarn="docker-compose run --rm node yarn"
 alias npx="docker-compose run --rm node npx"
 alias ncu="docker-compose run --rm node ncu"

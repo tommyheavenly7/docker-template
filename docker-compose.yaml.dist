@@ -8,14 +8,6 @@ services:
       - "./docker/.volumes/npm:/root/.npm"
     working_dir: /var/project
 
-  gulp:
-    container_name: "project-gulp"
-    image: "tommynovember7/docker-node:node12"
-    volumes:
-      - "./project:/var/project"
-    working_dir: /var/project
-    entrypoint: ["/usr/local/bin/gulp", "-f", "./gulp.js"]
-
   mongo:
     container_name: "project-mongo-db"
     image: mongo:4.2
@@ -74,11 +66,3 @@ services:
     volumes:
       - "./project:/var/project"
       - "./docker/.volumes/log:/var/log"
-
-  hadolint:
-    container_name: "project-hadolint"
-    image: "hadolint/hadolint:latest-debian"
-    volumes:
-      - "./:/var/project"
-    working_dir: /var/project
-    entrypoint: ["/bin/hadolint"]

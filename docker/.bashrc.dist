@@ -1,3 +1,4 @@
+## I strongly recommend placing a copy of this to the parent directory after revising.
 export PATH="./docker/bin:../docker/bin:../../docker/bin:$PATH"
 export PROJECT_ROOT="$PWD"
 # shellcheck source=.env

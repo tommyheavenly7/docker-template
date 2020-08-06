@@ -1,4 +1,5 @@
-docker/.bashrc
+.bashrc
+.env
 docker/hadolint.yaml
 docker/nginx/project.conf
 docker-compose.yaml
